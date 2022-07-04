@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mac Book Pro</title>
+  </head>
+  <body>
+    <main>
+      <container class="grid grid-cols-2 gap-4 mt-5">
+        <div class="image-side">
+          <img class="w-4/5 float-right" src="images/mac.png" alt="" />
+        </div>
+        <div class="functional-side">
+          <h1 class="text-4xl text-bold mb-2">
+            Customize your Blue 24-inch iMac with Apple M1 chip.
+          </h1>
+          <p>
+            Apple M1 chip with 8 - core CPU with 4 performance cores and 4
+            efficiency cores. 7-core CPU and 16-core Neural Engine 8GB unified
+            memory 256Gb SSD storage Two Thunderbolt/ USB 4 ports Magic Mouse
+            Magic Keyboard - US English.
+          </p>
+          <h5 class="font-bold mt-5">Memory</h5>
+          <div class="memory">
+            <button
+              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+            >
+              8GB unified memory
+            </button>
+            <button
+              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+            >
+              16Gb unified memory
+            </button>
+          </div>
+          <h5 class="font-bold mt-5">Storage</h5>
+          <div class="storage">
+            <button
+              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+            >
+              256Gb SSD storage
+            </button>
+            <button
+              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+            >
+              512GB SSD storage
+            </button>
+            <button
+              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+            >
+              1TB SSD storage
+            </button>
+          </div>
+          <h5 class="font-bold mt-5">Choose Your delivery option</h5>
+          <div class="delivery">
+            <button
+              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+            >
+              Friday, Aug 25 FREE Prime delivery
+            </button>
+            <button
+              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+            >
+              Friday, Aug 21 delivery Charge $20
+            </button>
+          </div>
+          <div class="calculation mt-5 font-bold w-1/2">
+            <div class="best-price flex justify-between my-2">
+              <h4>Best Price</h4>
+              <h4>$<span>1299</span></h4>
+            </div>
+            <hr />
+            <div class="memory-cost flex justify-between my-2">
+              <h4>Extra Memory Cost</h4>
+              <h4>$<span>0</span></h4>
+            </div>
+            <hr />
+            <div class="storage-cost flex justify-between my-2">
+              <h4>Extra Storage Cost</h4>
+              <h4>$<span>0</span></h4>
+            </div>
+            <hr />
+            <div class="delivery flex justify-between my-2">
+              <h4>Delivery Charge</h4>
+              <h4>$<span>0</span></h4>
+            </div>
+            <strong> <hr /> </strong>
+            <div class="total flex justify-between my-2">
+              <h4>Total Price</h4>
+              <h4>$<span>1299</span></h4>
+            </div>
+            <p class="font-normal">Add Promo code</p>
+            <div class="text-red flex mt-1">
+              <input type="text" class="border" />
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      </container>
+      <hr />
+      <h1 class="text-4xl text-bold mb-2 flex justify-center">
+        Total: $<span id="total">1299</span>
+      </h1>
+    </main>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
