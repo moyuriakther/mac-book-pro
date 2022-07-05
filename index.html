@@ -26,12 +26,14 @@
           <h5 class="font-bold mt-5">Memory</h5>
           <div class="memory">
             <button
-              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+              onclick="handle8GbMemory()"
+              class="bg-transparent hover:bg-purple-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded"
             >
               8GB unified memory
             </button>
             <button
-              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+              onclick="handle16GbMemory()"
+              class="bg-transparent hover:bg-purple-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded"
             >
               16Gb unified memory
             </button>
@@ -39,17 +41,20 @@
           <h5 class="font-bold mt-5">Storage</h5>
           <div class="storage">
             <button
-              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+              onclick="handle256GbStorage()"
+              class="bg-transparent hover:bg-purple-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded"
             >
               256Gb SSD storage
             </button>
             <button
-              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+              onclick="handle512GbStorage()"
+              class="bg-transparent hover:bg-purple-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded"
             >
               512GB SSD storage
             </button>
             <button
-              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+              onclick="handle1TbStorage()"
+              class="bg-transparent hover:bg-purple-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded"
             >
               1TB SSD storage
             </button>
@@ -57,12 +62,14 @@
           <h5 class="font-bold mt-5">Choose Your delivery option</h5>
           <div class="delivery">
             <button
-              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+              onclick="handleFreeDelivery()"
+              class="bg-transparent hover:bg-purple-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded"
             >
               Friday, Aug 25 FREE Prime delivery
             </button>
             <button
-              class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+              onclick="handle20Delivery()"
+              class="bg-transparent hover:bg-purple-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded"
             >
               Friday, Aug 21 delivery Charge $20
             </button>
@@ -70,33 +77,33 @@
           <div class="calculation mt-5 font-bold w-1/2">
             <div class="best-price flex justify-between my-2">
               <h4>Best Price</h4>
-              <h4>$<span>1299</span></h4>
+              <h4>$<span id="best-price">1299</span></h4>
             </div>
             <hr />
             <div class="memory-cost flex justify-between my-2">
               <h4>Extra Memory Cost</h4>
-              <h4>$<span>0</span></h4>
+              <h4>$<span id="extra-memory-cost">0</span></h4>
             </div>
             <hr />
             <div class="storage-cost flex justify-between my-2">
               <h4>Extra Storage Cost</h4>
-              <h4>$<span>0</span></h4>
+              <h4>$<span id="extra-storage-cost">0</span></h4>
             </div>
             <hr />
             <div class="delivery flex justify-between my-2">
               <h4>Delivery Charge</h4>
-              <h4>$<span>0</span></h4>
+              <h4>$<span id="delivery-cost">0</span></h4>
             </div>
             <strong> <hr /> </strong>
             <div class="total flex justify-between my-2">
               <h4>Total Price</h4>
-              <h4>$<span>1299</span></h4>
+              <h4>$<span id="total-price">1299</span></h4>
             </div>
             <p class="font-normal">Add Promo code</p>
-            <div class="text-red flex mt-1">
+            <div class="flex my-2">
               <input type="text" class="border" />
               <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                class="bg-red-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Apply
               </button>
